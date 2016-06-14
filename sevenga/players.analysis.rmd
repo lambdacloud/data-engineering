@@ -1,0 +1,26 @@
+---
+title: "Sevenga.Analytic"
+author: "Austen Wang"
+date: "2016/6/14"
+output: html_document
+---
+
+
+
+
+```{r pressure, echo=FALSE}
+library("dplyr")
+library("data.table")
+
+
+setwd("~/git/data-engineering/sevenga")
+```
+
+```{r pressure, echo=FALSE}
+# 载入数据
+
+df.players <- read.csv("data.sample/player_all.txt", header = TRUE, sep="\t")
+
+dt.players <- as.data.table(df.players)
+
+```
